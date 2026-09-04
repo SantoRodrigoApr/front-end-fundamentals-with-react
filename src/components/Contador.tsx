@@ -27,8 +27,8 @@ export const Contador = () => {
             >+1</Button>
             <Button
                     onClick={() => {
-                        setContador((c: number): number => c + 2);
-                        setContador((c: number): number => c + 1);
+                        setContador((c: number): number => (c ?? 0) + 2);
+                        setContador((c: number): number => (c as number) + 1);
                     }}
             >+3</Button>
             <Button
